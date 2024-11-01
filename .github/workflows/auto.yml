@@ -2,10 +2,11 @@ name: Auto
 
 on:
   schedule:
-    - cron: "30 1 * * *" # 北京时间上午09:30
+    - cron: "30 9 * * *" # 北京时间上午09:30
   workflow_dispatch:
 
 env:
+  TZ: Asia/Shanghai
   COOKIE: ${{ secrets.COOKIE }}
   COOKIE_2: ${{ secrets.COOKIE_2 }}
   COOKIE_3: ${{ secrets.COOKIE_3 }}
